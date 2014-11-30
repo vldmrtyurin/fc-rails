@@ -1,13 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Флэшкарточкер</title>
+  <meta charset="utf-8">
+  <title>Флэшкарточкер</title>
+    <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 </head>
+
 <body>
-    <p style="font-size: 22px;">
-        Первый в мире удобный менеджер флеш-карточек. Именно так.
-      </p>
+  <div class="container">
+
+    <header class="clearfix">
+      <h1>Флэшкарточкер</h1>
+      <ul class="navigation-links">
+        <li><a href="#">Все карточки</a></li>
+        <li><a href="#">Добавить карточку</a></li>
+      </ul>
+    </header>
+    <section>
+      <%= yield %>
     </section>
+  </div>
 </body>
-</html>
