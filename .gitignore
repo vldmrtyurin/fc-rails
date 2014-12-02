@@ -16,7 +16,7 @@
 /tmp
 
 #DB
-/config/database.yml
+config/database.yml
 
 # Mac
 .DS_Store
