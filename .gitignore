@@ -18,5 +18,8 @@
 #DB
 config/database.yml
 
+#Gems
+config/locales/simple_form.en.yml
+
 # Mac
 .DS_Store
