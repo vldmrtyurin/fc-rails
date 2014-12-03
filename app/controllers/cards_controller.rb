@@ -1,5 +1,4 @@
 class CardsController < ApplicationController
-
   def index
     @cards = Card.all
   end
@@ -25,7 +24,7 @@ class CardsController < ApplicationController
     if @card.update(card_params)
       redirect_to @card
     else
-      render 'edit'
+      render "edit"
     end
 
   end
@@ -41,8 +40,8 @@ class CardsController < ApplicationController
   end
 
   private
-    def card_params
-      params.require(:card).permit(:original_text, :translated_text)
-    end
 
+  def card_params
+    params.require(:card).permit(:original_text, :translated_text)
+  end
 end
