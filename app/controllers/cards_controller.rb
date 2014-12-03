@@ -26,7 +26,6 @@ class CardsController < ApplicationController
     else
       render "edit"
     end
-
   end
 
   def show
