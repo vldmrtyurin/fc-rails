@@ -1,17 +1,19 @@
 <head>
   <meta charset="utf-8">
-  <title>Флэшкарточкер</title>
+  <title>Flashcards</title>
     <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <%= csrf_meta_tags %>
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 </head>
 
 <body>
   <div class="container">
     <header class="clearfix">
-      <h1>Флэшкарточкер</h1>
+      <h1>Flashcards</h1>
       <ul class="navigation-links">
-        <li><%= link_to "Все карточки", cards_path %></li>
-        <li><a href="#">Добавить карточку</a></li>
+        <li><%= link_to "view all", cards_path %></li>
+        <li><%= link_to "add new", new_card_path %></li>
       </ul>
     </header>
     <section>
